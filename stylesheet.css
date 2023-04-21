@@ -1,0 +1,43 @@
+header{
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+nav {
+    text-align: center;
+   text-decoration: none;
+   padding: 0%;
+   
+clip-path: inset(0 50px 0 50px);
+}
+
+
+
+nav ul {
+    list-style: none;
+    list-style: none; /* removes the bullet points off the unordered list */
+    margin: 0;
+    padding: 0;
+    padding: 1%; /* Padding addsspace between each list item */
+    
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}   
+
+nav a {
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%;
+    width: 20vw;
+    height: 25vh;
+    margin-top: 0;
+    float: left;
+
+  }
+  
