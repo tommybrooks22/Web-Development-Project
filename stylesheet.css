@@ -4,22 +4,45 @@ header{
     
 }
 
-.animation{
-  width: 100px;
-  height: 100px;
+#animation{
   position: relative;
   background-color: red;
-  animation-name: example;
+  animation-name: test;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  height: 40px;
+  margin: 0%;
+  padding: 1%;
+  
+  
 }
 
-@keyframes animation {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+@keyframes test {
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+
+body{
+  margin: 0%;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  background: linear-gradient(-45deg,#f11f6f, #00c2a2,#2370d5,#c252ee);
+}
+
+@keyframes gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50% ;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 
 ul {
@@ -59,12 +82,13 @@ ul {
     background-color: #0099ff;
   }
 
-img {
+#headshot {
     border-radius: 50%;
-    width: 20vw;
-    height: 25vh;
+    width: 300px;
+    height: 300px;
     margin-top: 0;
     float: left;
+    border: 5px #111 solid;
 
   }
   
