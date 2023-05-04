@@ -28,7 +28,7 @@ header{
 body{
   margin: 0%;
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 1s ease infinite;
   height: 100vh;
   background: linear-gradient(-45deg,#f11f6f, #00c2a2,#2370d5,#c252ee);
 }
@@ -92,3 +92,101 @@ ul {
 
   }
   
+#title{
+  text-align: center;
+}
+
+#Overveiw{
+  text-align: center;
+}
+
+#info{
+  text-align: center;
+  max-width: 80%;
+  left: 400px;
+}
+
+.icons{
+  display: flex;
+  column-gap:25px;
+}
+
+.icon{
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+
+.icon:hover{
+  outline-offset: 4px;
+}
+
+.icon i{
+margin: auto;
+}
+
+.icon:hover i{
+animation: shake 0.25s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+
+.icon--twitter:hover{
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--linkedin:hover{
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+.icon--github:hover{
+  background-color: #2ea44f;
+  outline-color: #2ea44f ;
+}
+
+@keyframes shake {
+10%{
+  transform: rotate(15deg);
+}  
+20%{
+  transform: rotate(-15deg);
+}
+30%{
+  transform: rotate(15deg);
+}
+40%{
+  transform: rotate(-15deg);
+}
+}
+
+footer{
+  list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
