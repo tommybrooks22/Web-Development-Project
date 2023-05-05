@@ -31,6 +31,7 @@ body{
   animation: gradient 1s ease infinite;
   height: 100vh;
   background: linear-gradient(-45deg,#f11f6f, #00c2a2,#2370d5,#c252ee);
+  max-width: 100%;
 }
 
 @keyframes gradient {
@@ -89,6 +90,7 @@ ul {
     margin-top: 0;
     float: left;
     border: 5px #111 solid;
+    object-fit: cover;
 
   }
   
@@ -119,6 +121,7 @@ ul {
   outline: 2px solid #fff;
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
+  text-decoration: none;
 }
 
 .icon:hover{
@@ -176,17 +179,22 @@ animation: shake 0.25s;
 }
 
 footer{
-  list-style-type: none;
+    list-style-type: none;
     margin: 0;
-    padding: 1rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
     overflow: hidden;
     background-color: #333;
     display: inline-block;
-    top: 0;
     width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 0;
+    max-width: 100%;
+}
+
+#info{
+  margin-left: 70px;
+  width: 30%;
 }
