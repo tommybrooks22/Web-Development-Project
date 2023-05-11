@@ -30,8 +30,11 @@ body{
   background-size: 400% 400%;
   animation: gradient 1s ease infinite;
   height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(-45deg,#f11f6f, #00c2a2,#2370d5,#c252ee);
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes gradient {
@@ -98,14 +101,12 @@ ul {
   text-align: center;
 }
 
-#Overveiw{
+#Overview{
   text-align: center;
 }
 
 #info{
   text-align: center;
-  max-width: 80%;
-  left: 400px;
 }
 
 .icons{
@@ -122,6 +123,7 @@ ul {
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
   text-decoration: none;
+
 }
 
 .icon:hover{
@@ -179,8 +181,8 @@ animation: shake 0.25s;
 }
 
 footer{
+    margin-top: auto;
     list-style-type: none;
-    margin: 0;
     padding-top: 8px;
     padding-bottom: 8px;
     overflow: hidden;
@@ -192,9 +194,16 @@ footer{
     align-items: center;
     justify-content: center;
     max-width: 100%;
+    bottom: 0%;
+
 }
 
-#info{
-  margin-left: 70px;
+main{
   width: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  top: 25%;
+  position: absolute;
 }
+
