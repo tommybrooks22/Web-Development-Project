@@ -215,6 +215,52 @@ animation: shake 0.25s;
   outline-color: #2ea44f ;
 }
 
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.photo{
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  transition: transform 0.3s;
+}
+
+.photo:hover{
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.photo:not(:hover){
+  transition: transform 0.3s;
+}
+
+.photo.enlarge{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 400px;
+  z-index: 2;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  max-width: 30%;
+  margin: 10px;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+}
+
 
 main{
   text-align: center;
