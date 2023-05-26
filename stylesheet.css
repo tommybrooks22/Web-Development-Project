@@ -58,7 +58,7 @@ body{
   margin: 0%;
   background-size: 400% 400%;
   animation: gradient 1s ease infinite;
-  height: 100vh;
+  
   min-height: 100vh;
   background: linear-gradient(-45deg,#f11f6f, #00c2a2,#2370d5,#c252ee);
   max-width: 100%;
@@ -155,6 +155,12 @@ footer{
   justify-content: center;
   max-width: 100%;
   bottom: 0%;
+  height: fit-content;
+  min-height: fit-content;
+}
+
+.fa-brands{
+  color: white;
 }
 
 .icons{
@@ -248,6 +254,42 @@ animation: shake 0.25s;
   z-index: 2;
 }
 
+#photo1{
+  background-image: url(boat.jpg) ;
+}
+
+#photo2{
+  background-image: url(porsche.jpg) ;
+}
+
+#photo3{
+  background-image: url(portsmouth.jpg) ;
+}
+
+#photo4{
+  background-image: url(dog.jpg) ;
+}
+
+#photo5{
+  background-image: url(team.jpg) ;
+}
+
+#photo6{
+  background-image: url(beer2.jpg) ;
+}
+
+#photo7{
+  background-image: url(sailing.jpg) ;
+}
+
+#photo8{
+  background-image: url(graduation.jpg) ;
+}
+
+#photo9{
+  background-image: url(leaving.jpg) ;
+}
+
 .container {
   background-color: white;
   border-radius: 5px;
@@ -259,6 +301,11 @@ animation: shake 0.25s;
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 2;
+}
+
+#googleMap{
+  width: 400px;
+  height: 400px;
 }
 
 
