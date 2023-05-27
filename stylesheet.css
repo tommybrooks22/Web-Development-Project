@@ -26,11 +26,11 @@
 }
 
 @keyframes test {
-  0%   {background-color:red;}
-  25%  {background-color:yellow;}
-  50%  {background-color:blue;}
-  75%  {background-color:green;}
-  100% {background-color:red;}
+  0%   {background-color:rgb(236, 116, 116);}
+  25%  {background-color:rgb(255, 255, 120);}
+  50%  {background-color:rgb(88, 88, 226);}
+  75%  {background-color:rgb(53, 148, 53);}
+  100% {background-color:rgb(255, 71, 71);}
 }
 
 header{
@@ -58,9 +58,8 @@ body{
   margin: 0%;
   background-size: 400% 400%;
   animation: gradient 1s ease infinite;
-  
   min-height: 100vh;
-  background: linear-gradient(-45deg,#f11f6f, #00c2a2,#2370d5,#c252ee);
+  background: linear-gradient(-45deg,#e24984, #79d1c2,#4397cf,#c587dd);
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -82,7 +81,6 @@ ul {
     
   }
 
-  
   li {
     display: inline-block;
     
@@ -103,7 +101,7 @@ ul {
   }
 
   .active {
-    background-color: #0099ff;
+    background-color: #ff00d4ad;
   }
 
 #headshot {
@@ -112,7 +110,6 @@ ul {
     height: 300px;
     margin-top: 0;
     margin-right: 0;
-    /*float: left;*/
     border: 5px #111 solid;
     object-fit: cover;
 
@@ -128,11 +125,12 @@ ul {
 #info{
   text-align: center;
   font-size: 20px;
-  margin-top: 60px;
-  padding: 10px;
-  max-height: 10%;
   Font-Family: 'Ruda', Sans-Serif;
   Font-Size: 20px;
+  background-color: wheat ;
+  border-radius: 5px;
+  max-width: 60%;
+  padding: 15px;
 }
 
 .flex{
@@ -255,52 +253,52 @@ animation: shake 0.25s;
 }
 
 #photo1{
-  background-image: url(boat.jpg) ;
+  background-image: url(boat.png) ;
 }
 
 #photo2{
-  background-image: url(porsche.jpg) ;
+  background-image: url(porsche.png) ;
 }
 
 #photo3{
-  background-image: url(portsmouth.jpg) ;
+  background-image: url(portsmouth.png) ;
 }
 
 #photo4{
-  background-image: url(dog.jpg) ;
+  background-image: url(dog.png) ;
 }
 
 #photo5{
-  background-image: url(team.jpg) ;
+  background-image: url(team.png) ;
 }
 
 #photo6{
-  background-image: url(beer2.jpg) ;
+  background-image: url(beer2.png) ;
 }
 
 #photo7{
-  background-image: url(sailing.jpg) ;
+  background-image: url(sailing.png) ;
 }
 
 #photo8{
-  background-image: url(graduation.jpg) ;
+  background-image: url(graduation.png) ;
 }
 
 #photo9{
-  background-image: url(leaving.jpg) ;
+  background-image: url(leaving.png) ;
 }
 
 .container {
-  background-color: white;
+  background-color: wheat;
   border-radius: 5px;
-  max-width: 30%;
   margin: 10px;
 }
 
 .jobs {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  margin: 20px;
 }
 
 #googleMap{
