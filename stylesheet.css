@@ -344,6 +344,13 @@ animation: shake 0.25s;
   margin-top: 20px;
 }
 
+.grayscale-mode {
+  filter: grayscale(100%);
+}
+
+.grayscale-mode body {
+  filter: grayscale(100%);
+}
 
 main{
   text-align: center;

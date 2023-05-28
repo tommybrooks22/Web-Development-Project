@@ -7,3 +7,14 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
+
+// Get the grayscale toggle button element
+const grayscaleToggleButton = document.getElementById('grayscaleToggle');
+
+// Listen for the toggle button click event
+grayscaleToggleButton.addEventListener('click', function() {
+  // Toggle the grayscale class on the body element
+  document.body.classList.toggle('grayscale-mode');
+});
+
+
