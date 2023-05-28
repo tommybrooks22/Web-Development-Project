@@ -224,6 +224,7 @@ animation: shake 0.25s;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 10px;
   margin: 20px;
+  position: relative;
 }
 
 .photo{
@@ -288,6 +289,16 @@ animation: shake 0.25s;
   background-image: url(leaving.png) ;
 }
 
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .container {
   background-color: wheat;
   border-radius: 5px;
@@ -297,6 +308,13 @@ animation: shake 0.25s;
 .jobs {
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.hobbies{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
   grid-gap: 10px;
   margin: 20px;
 }
