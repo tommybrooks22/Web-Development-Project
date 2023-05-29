@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Hobbies</title>
+    <title>Tommy Brooks Portfolio</title>
     <meta name="title" content="Tommy Brooks Portfolio">
     <meta name="description" content="Come take a look at my Portfolio!">
 
@@ -28,46 +28,62 @@
     <script src="https://kit.fontawesome.com/008d02aaf0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+
 </head>
 
-<body>
-
+<body onload="myMap()">
     <header>
 
-        <h1>Hobbies</h1>
+        <h1>Tommy Brooks</h1>
 
-        <nav>
-            <ul> <!-- Nav menu -->
-                <li><a href="landing page.html">Home</a></li>
-                <li><a class="active" href="Hobbies.html">Hobbies</a></li>
-                <li><a href="Work Experience.html">Work Experience</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Life Achievements.html">Life Achievements</a></li>
-            </ul>
-        </nav>
+        <ul> <!-- Nav menu -->
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="./Pages/Hobbies.html">Hobbies</a></li>
+            <li><a href="./Pages/Work Experience.html">Work Experience</a></li>
+            <li><a href="./Pages/Gallery.html">Gallery</a></li>
+            <li><a href="./Pages/Life Achievements.html">Life Achievements</a></li>
+        </ul>
     </header>
 
-    <main class="hobbies">
+    <div class="flex">
 
-        <section class="container">
-            <h2>I love the formula 1 and one day would like to work in the sport, possibly as a data analysis</h5>
-        </section>
+        <h1 id="title"> Hello and Welcome to My Portfolio </h1>
 
-        <section class="container">
-            <h2>I used to play rugby but now I just prefer to watch it with a pint in hand</h5>
-        </section>
+    </div>
 
-        <section class="container">
-            <h2>I like to game when u can and play with my friends</h5>
-        </section>   
-        
-        <section class="container">
-            <h2>I like to go on long walks on the beach</h2>
-        </section>
+    <main>
 
-         <!-- Grayscale toggle button -->
-<button id="toggleButton">Grayscale</button>
+        <div class="landingcontent">
+            <div class="left">
+                <img id="headshot" src="./images/Me.webp" alt="My Face">
+            </div>
+            <div class="right">
+                <p id="info">Welcome to my portfolio! My name is Tommy Brooks, and I am a cybersecurity student at Bath
+                    Spa University with a passion
+                    for the computer industry as a whole. Through my work, I strive to document and show off my
+                    experiance at university and all the projects I work on in my time here.
+
+                    This portfolio showcases a selection of my best projects and experiences at University. From a coded
+                    vending machine to images of my hobbies and interests.
+
+                    Thank you for taking the time to explore my page. I hope it inspires you, and I look forward to
+                    hearing from
+                    you soon!
+                </p>
+            </div>
+        </div>
+
+        <div id="googleMap"></div>
+
+        <!-- Grayscale toggle button -->
+<button type="button" id="toggleButton">Grayscale</button>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsbqG1353BmyBdukdPN35EMEWXqSYiYzU&callback=myMap"></script>
+
     </main>
+
+
 
     <footer>
 
@@ -90,7 +106,6 @@
         </div>
     </footer>
     <script src="script.js" defer></script>
-
 </body>
 
 </html>
