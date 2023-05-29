@@ -27,6 +27,7 @@
     <!-- Links -->
     <script src="https://kit.fontawesome.com/008d02aaf0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../slideshow.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
 </head>
 
@@ -51,23 +52,68 @@
 
         <section class="container">
             <h2>I love the formula 1 and one day would like to work in the sport, possibly as a data analysis</h5>
+                <div class="slideshow-container">
+                    <div class="slideshow" id="slideshow4">
+                      <img src="../images/car1.webp" alt="Image 1">
+                      <img src="../images/car2.webp" alt="Image 2">
+                      <img src="../images/car3.webp" alt="Image 3">
+                    </div>
+                    <div class="slideshow-nav">
+                      <button class="prev" onclick="changeSlide(-1, 'slideshow4')">Previous</button>
+                      <button class="next" onclick="changeSlide(1, 'slideshow4')">Next</button>
+                    </div>
+                  </div>
         </section>
 
         <section class="container">
             <h2>I used to play rugby but now I just prefer to watch it with a pint in hand</h5>
+                <div class="slideshow-container">
+                    <div class="slideshow" id="slideshow3">
+                      <img src="/images/pint1.webp" alt="Image 1">
+                      <img src="/images/pint2.webp" alt="Image 2">
+                      <img src="/images/4pints.webp" alt="Image 3">
+                    </div>
+                    <div class="slideshow-nav">
+                      <button class="prev" onclick="changeSlide(-1, 'slideshow3')">Previous</button>
+                      <button class="next" onclick="changeSlide(1, 'slideshow3')">Next</button>
+                    </div>
+                  </div>
         </section>
 
         <section class="container">
-            <h2>I like to game when u can and play with my friends</h5>
+            <h2>I like to game with my friends</h5>
+                <div class="slideshow-container">
+                    <div class="slideshow" id="slideshow2">
+                      <img src="/images/gaming1.webp" alt="Image 1">
+                      <img src="/images/gaming2.webp" alt="Image 2">
+                      <img src="/images/gaming3.webp" alt="Image 3">
+                    </div>
+                    <div class="slideshow-nav">
+                      <button class="prev" onclick="changeSlide(-1, 'slideshow2')">Previous</button>
+                      <button class="next" onclick="changeSlide(1, 'slideshow2')">Next</button>
+                    </div>
+                  </div>
         </section>   
         
         <section class="container">
             <h2>I like to go on long walks on the beach</h2>
+            <div class="slideshow-container">
+                <div class="slideshow" id="slideshow1">
+                  <img src="../images/beach.webp" alt="Image 1">
+                  <img src="../images/beach2.webp" alt="Image 2">
+                  <img src="../images/beach3.webp" alt="Image 3">
+                </div>
+                <div class="slideshow-nav">
+                  <button class="prev" onclick="changeSlide(-1, 'slideshow1')">Previous</button>
+                  <button class="next" onclick="changeSlide(1, 'slideshow1')">Next</button>
+                </div>
+              </div>
         </section>
 
          <!-- Grayscale toggle button -->
 <button id="toggleButton">Grayscale</button>
-    </main>
+    
+</main>
 
     <footer>
 
@@ -90,6 +136,7 @@
         </div>
     </footer>
     <script src="../script.js" defer></script>
+    <script src="../slideshow.js" defer></script>
 
 </body>
 

@@ -1,0 +1,41 @@
+.slideshow-container {
+    margin-bottom: 20px;
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+}
+
+.slideshow img {
+    width: 50%;
+    height: auto;
+    display: none;
+    margin: 0 auto;
+}
+
+.slideshow img:first-child {
+    display: block;
+}
+
+.slideshow-nav {
+    text-align: center;
+}
+
+.prev,
+.next {
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #555;
+}
