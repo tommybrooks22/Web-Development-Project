@@ -346,10 +346,25 @@ animation: shake 0.25s;
 
 .grayscale-mode {
   filter: grayscale(100%);
+  background: linear-gradient(-45deg,#e7e2e4, #a0a0a0,#32383b,#8d8292);
 }
 
-.grayscale-mode body {
-  filter: grayscale(100%);
+
+#toggleButton{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#toggleButton:hover{
+  background-color: #555;
 }
 
 main{

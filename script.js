@@ -8,13 +8,24 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
 
-// Get the grayscale toggle button element
-const grayscaleToggleButton = document.getElementById('grayscaleToggle');
 
-// Listen for the toggle button click event
-grayscaleToggleButton.addEventListener('click', function() {
-  // Toggle the grayscale class on the body element
+
+
+const change = () => {
+
+  // Toggle the grayscale-mode class on the body element
   document.body.classList.toggle('grayscale-mode');
-});
 
+  // Toggle the background color
+  const isGrayscale = document.body.classList.contains('grayscale-mode');
+  if (isGrayscale) {
+    document.body.style.backgroundColor = '#000'; // Set grayscale background color
+  } else {
+    document.body.style.backgroundColor = '#fff'; // Set original background color
+  }
+}
 
+const buttonclick = document.getElementById('toggleButton');
+buttonclick.addEventListener('click', function() {
+    change();
+     })
